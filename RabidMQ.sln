@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabidMQ", "RabidMQ\RabidMQ.csproj", "{BBE80FF3-398C-4961-80D6-3BB1D4683F8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE80FF3-398C-4961-80D6-3BB1D4683F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE80FF3-398C-4961-80D6-3BB1D4683F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE80FF3-398C-4961-80D6-3BB1D4683F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE80FF3-398C-4961-80D6-3BB1D4683F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D290E8F9-E7B8-4D71-9516-899F33894CB7}
+	EndGlobalSection
+EndGlobal

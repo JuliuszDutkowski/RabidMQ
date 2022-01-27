@@ -1,0 +1,43 @@
+create DATABASE rabidmqdb;
+
+create TABLE rabidmqdb.users(
+    userid integer not null AUTO_INCREMENT unique,
+    username varchar(20) not null UNIQUE,
+    PASSWORD varchar(20) not null,
+    primary key(userid)
+    );
+    
+CREATE TABLE rabidmqdb.messagehistory(
+    messageid integer not null AUTO_INCREMENT unique,
+    user1id integer not null,
+    user2id integer not null,
+    text varchar(300),
+    PRIMARY key(messageid),
+    );
+    
+CREATE table rabidmqdb.contacts(
+    contactid integer not null AUTO_INCREMENT unique,
+    1userid integer not null,
+    2userid integer not null,
+    PRIMARY key(contactid)
+    );
+    
+alter table messagehistory
+	add constraint user1id foreign key(user1id)
+	references users(userid)
+	;
+    
+alter table messagehistory
+	add constraint user2id foreign key(user2id)
+	references users(userid)
+	;
+    
+alter table contacts
+	add constraint 1userid foreign key(1userid)
+	references users(userid)
+	;
+    
+alter table contacts
+	add constraint 2userid foreign key(2userid)
+	references users(userid)
+	;
